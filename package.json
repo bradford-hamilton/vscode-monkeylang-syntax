@@ -1,0 +1,25 @@
+{
+    "name": "monkey-lang",
+    "displayName": "Monkey Lang",
+    "description": "Syntax highlighting for monkey lang",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.37.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "monkey",
+            "aliases": ["Monkey", "monkey"],
+            "extensions": [".mo"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "monkey",
+            "scopeName": "source.mo",
+            "path": "./syntaxes/monkey.tmLanguage.json"
+        }]
+    }
+}
